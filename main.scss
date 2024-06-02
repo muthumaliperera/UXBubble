@@ -1,0 +1,69 @@
+$primary:rgb(42, 42, 42);
+$secondary:#ffa200;
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+
+$custom-theme-colors:(
+    "color1":rgb(86, 86, 86),
+    "color2":rgb(150, 150, 150),
+    "color3":rgb(204, 204, 204),
+    
+    "altdark":rgb(43, 43, 43)
+);
+
+$theme-colors:map-merge($custom-theme-colors , $theme-colors );
+
+
+//pagination
+
+
+
+
+$pagination-focus-color:            $light;
+$pagination-focus-bg:               $primary;
+$pagination-focus-box-shadow:       none;
+$pagination-focus-outline:          none;
+
+$pagination-border-color:           var(--#{$prefix}border-color);
+
+
+
+
+//tooltip
+$tooltip-bg:                        $light;
+$tooltip-color:                     $dark;
+$tooltip-font-size:                 15px;
+
+#navbar{
+    height: 60px;
+}
+
+  //blog
+  .card-1{
+  border: solid 1px map-get($custom-theme-colors, 'color9');
+  margin-bottom: 10px;
+  }
+  #card1img{
+     width: 100%;
+    height: 200px;
+  }
+.head_Card1{
+    font-size: 22px;
+    font-weight: 500;
+    color:    map-get($custom-theme-colors, 'color10');
+}
+.description_Card1{
+    font-size: 14px;
+    text-align: justify;
+    color:map-get($custom-theme-colors, 'color11');
+}
+.Date_Card1{
+    font-size: 13px;
+    color: map-get($custom-theme-colors, 'color8');
+}
+.txt_color{
+    color: #636260;
+}
+@import 'node_modules/bootstrap/scss/bootstrap.scss'
